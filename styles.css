@@ -12,6 +12,17 @@ h1 {
     margin: 0px;
 }
 
+input {
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+label {
+    display: inline;
+    margin-top: 10px;
+    margin-bottom:5px;
+}
+
 header {
     background-color: cornflowerblue;
     width: 100%;
@@ -22,7 +33,6 @@ h6 {
     font-weight: 800;
     font-size: 72px;
     margin:0px;
-    margin-left: 5%;
 }
 
 .side-navbar {
@@ -77,4 +87,17 @@ a.navbar {
 
 .margined-container {
     margin:20px;
+}
+
+.indent {
+    margin-left: 20px;
+}
+
+#sqrt-results {
+    list-style: none;
+    margin:0;
+}
+
+#sqrt-widget:focus {
+    outline: none;
 }

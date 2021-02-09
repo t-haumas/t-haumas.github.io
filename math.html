@@ -23,13 +23,25 @@
     </div>
     <div style="margin-left: 120px;">
         <div class="margined-container">
-            <p>So right now this won't show latin anymore And I'm just gonna put a bunch of silly stuff here so it's filled and i get motivated. A sort of mid-range pink noise, a soft B, and a soft F# all play throughout the whole song. I love listening to tracks made for the purpose of relaxation, and many include pink noise. The noise that backdrops this song is soft, with frequencies not too high or too low. Lovely. The noise is most noticeable during the intro, which is part of the reason I like it so much. It makes this song perfect for listening to while falling asleep-if you're in the mood for it. <br> That's some analysis of familiar that I will probably be posting at some point.</p>
-            <h2>What if I-</h2>
-            <h3>Here in the now.</h3>
+            <h1>Math widgets</h1>
+            <div class=indent>
+                <h2>Square root finder (iterating approximations method)</h2>
+                <div class=indent id="sqrt-widget" tabindex=-1>
+                    <label>Find the square root of:</label>
+                    <input type="text" id="sqrt-input">
+                    <br>
+                    <label>Seed value:</label>
+                    <input type="text" id="seed-input">
+                    <br>
+                    <label>Result accurate to how many decimal places (max 15):</label>
+                    <input type="text" id="decimalPlaceInput">
+                    <ul id="sqrt-results"></ul>
+                </div>
+            </div>
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="math.js"></script>
 </body>
 
 </html>
