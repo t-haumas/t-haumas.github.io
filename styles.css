@@ -5,30 +5,70 @@
 body {
     color:rgb(20, 53, 87);
     background-color: #DDD;
+    margin:0px;
 }
 
 h1 {
+    margin: 0px;
+}
+
+header {
+    background-color: cornflowerblue;
+    width: 100%;
+    margin:0px;
+}
+
+h6 {
+    font-weight: 800;
+    font-size: 72px;
+    margin:0px;
+    margin-left: 5%;
+}
+
+.side-navbar {
+    height:100%;
+    width:120px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background-color: cornflowerblue;
+    /* transition:0.5s; */
+    text-align: center;
+}
+
+ul
+{
     margin:0;
+    padding:0;
 }
 
-.button-like-link {
-    color: #fff;
-    padding: 10px;
-    background-color: #333;
-    border: 2px solid #AAA ;
+/* li.navbar {
+    
+} */
+
+a.navbar {
     text-decoration: none;
+    color:#000;
+    padding: 10px;
+    margin:3px;
+    border: 2px solid #000;
+    text-align: center;
+    list-style: none;
+    border-radius: 5px;
+    min-width:90px;
+    display: inline-block;
 }
 
-.button-like-link:visited {
-    color: rgb(45, 60, 201);
+.navbar:visited {
+    color: #111;
 }
 
-.button-like-link:hover {
-    background-color: rgb(71, 67, 131);
+.navbar:hover {
+    background-color: red;
 }
 
-.button-like-link:active {
-    background-color: rgb(255, 0, 0);
+.navbar:active {
+    background-color: rgb(195, 83, 218);
 }
 
 .horizontally-centered {
@@ -36,7 +76,5 @@ h1 {
 }
 
 .margined-container {
-    width:90%;
-    margin:auto;
-    margin-top: 30px;
+    margin:20px;
 }
