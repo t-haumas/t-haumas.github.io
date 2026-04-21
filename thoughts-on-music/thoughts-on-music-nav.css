@@ -1,4 +1,4 @@
-/* Shared layout + back control for pages under /musicwritings/ (no site sidebar). */
+/* Shared layout + back control for pages under /thoughts-on-music/ (no site sidebar). */
 
 body {
     margin: 0;
@@ -7,7 +7,7 @@ body {
     background-color: #DDD;
 }
 
-.writings-back {
+.thoughts-back {
     position: fixed;
     top: 12px;
     left: 12px;
@@ -24,19 +24,19 @@ body {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
-.writings-back:hover {
+.thoughts-back:hover {
     background: #fff;
     border-color: rgba(0, 0, 0, 0.2);
 }
 
-.writings-shell {
+.thoughts-shell {
     max-width: 40rem;
     margin: 0 auto;
     padding: 3.25rem 1.5rem 2.5rem;
     line-height: 1.6;
 }
 
-.writings-shell h1 {
+.thoughts-shell h1 {
     margin-top: 0;
 }
 
@@ -45,12 +45,12 @@ body {
     font-size: 0.95rem;
 }
 
-.writing-list {
+.thoughts-list {
     line-height: 1.6;
     padding-left: 1.5rem;
     margin: 1em 0;
 }
 
-.writing-list li {
+.thoughts-list li {
     margin: 0.5em 0;
 }

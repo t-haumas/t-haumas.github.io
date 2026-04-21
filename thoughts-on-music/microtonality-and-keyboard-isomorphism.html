@@ -19,7 +19,7 @@
             margin: 0;
             padding: 0;
         }
-        .writings-back {
+        .thoughts-back {
             position: fixed;
             top: 12px;
             left: 12px;
@@ -35,7 +35,7 @@
             padding: 8px 14px;
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
         }
-        .writings-back:hover {
+        .thoughts-back:hover {
             background: #fff;
             border-color: rgba(0, 0, 0, 0.2);
         }
@@ -63,14 +63,49 @@
         @media (max-width: 600px) {
             .container { padding: 1rem; }
         }
+        .summary-box {
+            background: #f3f3f3;
+            border-radius: 8px;
+            padding: 1rem 1.25rem 1.1rem;
+            margin: 1.25rem 0 1.5rem;
+            border-left: 4px solid #6b8fa3;
+        }
+        .summary-box h2 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+            color: #333;
+        }
+        .summary-box ul {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+        .summary-box li {
+            margin: 0.4em 0;
+            line-height: 1.55;
+        }
     </style>
 </head>
 <body>
-    <a class="writings-back" href="/musicwritings/">← Music writings</a>
+    <a class="thoughts-back" href="/thoughts-on-music/">← Thoughts on music</a>
     <div class="container">
         <header>
-            <h1>A Rant on Microtonality & Keyboard Isomorphism</h1>
+            <h1>Fully-Generalizable Muscle Memory is not Possible: A Rant on Microtonality & Keyboard Isomorphism</h1>
             <p><em>July 5, 2025</em></p>
+            <div class="summary-box">
+                <h2>TL;DR</h2>
+                <p>I wanted to find a well-defined way to create keyboard mappings for the Lumatone for any EDO such that across EDOs:</p>
+                <ul>
+                    <li>Intervals have similar shapes on the keyboard</li>
+                    <li>Octaves have the same shape</li>
+                    <li>R steps and DR steps stay as close to 12edo's whole tones and semitones as possible, respectively.</li>
+                    <li>Every note of the EDO is easy and intuitive to reach</li>
+                    <li>The layout has a repeating vertical pattern, with duplicate pitches in other rows for more fingering options</li>
+                    <li>All layouts for the different EDOs would share the same fine-tuning direction</li>
+                    <li>The muscle memory for playing in all of the different EDOs would be very similar</li>
+                </ul>
+                <p>As it turns out, most of these goals are in direct conflict with each other. But this investigation led me to discover a lot of powerful truths about microtonality and two-dimensional keyboard layouts.</p>
+            </div>
         </header>
         <main>
             <section>
@@ -109,8 +144,8 @@
                 <p>Despite the limitations of the 5L+2S mapping system, I would still love to try out many of these EDOs using this layout; it could be awesome! I think the muscle memory from 12edo will probably be easily leveraged in other EDOs this way. But who knows! Maybe I'll come up with a better system later. Or maybe I'll have to succumb to the fact that every EDO will require learning new muscle memory.</p>
                 <p>Another point in favor of these 5L+2S mappings is that many of them approximate some of my favorite intervals well (such as 5/4, 7/4, and 3/2). From the above list, the Highly-Good-for-Just-Intonation EDOs are: 7, 12, 19, 22, 31, 46, and 53 (that is a term I made up based on the concept behind highly-composite numbers. I bet if you look that up you can figure out what I mean here, basically each EDO in that list approximates none of those 3 intervals I mentioned any worse than all previous EDOs).</p>
                 <p>Anyways, what was the point of this rant? Oh yeah! Explaining that YouTube video I made. 37edo doesn't approximate JI particularly well, but it has a very large ratio of L:S, meaning its small step in the major scale is indeed really small, and the large steps are quite large. This leads to a really interesting sound that I liked. I also really enjoyed how its fine-tuning direction was in the DR direction. So, I ended up having some fun playing around with it on the virtual terpstra website, and recorded a little demo of some of the cool chords it can make.</p>
-                <p>Link to the referenced 57edo demo YouTube video I made: <a href="https://www.youtube.com/watch?v=w0cHZIxQ_dA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=w0cHZIxQ_dA</a></p>
-                <p>Play the 37edo 5L+2S layout with your computer keyboard online: <a href="https://tinyurl.com/57edoOnline" target="_blank" rel="noopener">https://tinyurl.com/57edoOnline</a></p>
+                <p>Link to the references 37edo demo YouTube video I made: <a href="https://www.youtube.com/watch?v=w0cHZIxQ_dA" target="_blank" rel="noopener">https://www.youtube.com/watch?v=w0cHZIxQ_dA</a></p>
+                <p>Play the 37edo 5L+2S layout with your computer keyboard online: <a href="https://tinyurl.com/37-edo-online" target="_blank" rel="noopener">https://tinyurl.com/37-edo-online</a></p>
                 <p>That's all for now, thanks for reading!</p>
                 <p>- Thaumas</p>
         </main>
