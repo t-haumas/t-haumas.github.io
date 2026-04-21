@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Thaumas</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math widgets — Thaumas</title>
+    <link rel="stylesheet" href="/styles.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <div class="side-navbar">
-        <h6>T</h6>
-        <a class="navbar" href="index.html">Home</a>
-        <a class="navbar" href="about.html">About me!</a>
-        <a class="navbar" href="math.html">Math widgets</a>
+        <a class="navbar" href="/index.html">Home</a>
+        <a class="navbar" href="/musicwritings/">Music writings</a>
+        <a class="navbar" href="/math-widgets.html">Math widgets</a>
     </div>
-    <div style="margin-left: 120px;">
+    <div class="main-with-nav">
         <div class="margined-container">
             <h1>Math widgets</h1>
-            <div class=indent>
+            <div class="indent">
                 <h2>Square root finder (iterating approximations method)</h2>
-                <div class=indent id="sqrt-widget" tabindex=-1>
+                <div class="indent" id="sqrt-widget" tabindex="-1">
                     <label>Find the square root of:</label>
                     <input type="text" id="sqrt-input">
                     <br>
@@ -41,7 +42,7 @@
         </div>
     </div>
 
-    <script src="math.js"></script>
+    <script src="/math.js"></script>
 </body>
 
 </html>

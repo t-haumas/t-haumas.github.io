@@ -1,11 +1,11 @@
 * {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
-    color:rgb(20, 53, 87);
+    color: #111;
     background-color: #DDD;
-    margin:0px;
+    margin: 0;
 }
 
 h1 {
@@ -23,27 +23,24 @@ label {
     margin-bottom:5px;
 }
 
-header {
-    background-color: cornflowerblue;
-    width: 100%;
-    margin:0px;
-}
-
-h6 {
-    font-weight: 800;
-    font-size: 72px;
-    margin:0px;
+.main-with-nav {
+    margin-left: 132px;
+    min-height: 100vh;
 }
 
 .side-navbar {
-    height:100%;
-    width:120px;
-    position:fixed;
-    top:0px;
-    left:0px;
+    height: 100%;
+    width: 132px;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: cornflowerblue;
-    /* transition:0.5s; */
-    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 14px 10px 16px;
 }
 
 ul
@@ -52,21 +49,24 @@ ul
     padding:0;
 }
 
-/* li.navbar {
-    
-} */
-
 a.navbar {
     text-decoration: none;
-    color:#000;
+    color: #000;
     padding: 10px;
-    margin:3px;
+    margin: 0;
     border: 2px solid #000;
     text-align: center;
     list-style: none;
     border-radius: 5px;
-    min-width:90px;
-    display: inline-block;
+    min-width: 90px;
+    width: 100%;
+    max-width: 112px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 0.85rem;
+    line-height: 1.25;
+    background: transparent;
+    transition: background 0.18s ease, border-color 0.18s ease;
 }
 
 .navbar:visited {
@@ -74,11 +74,13 @@ a.navbar {
 }
 
 .navbar:hover {
-    background-color: red;
+    background: rgba(210, 245, 235, 0.55);
+    border-color: #14532d;
 }
 
 .navbar:active {
-    background-color: rgb(195, 83, 218);
+    background: rgba(167, 230, 208, 0.65);
+    border-color: #000;
 }
 
 .horizontally-centered {
@@ -87,6 +89,17 @@ a.navbar {
 
 .margined-container {
     margin:20px;
+}
+
+.page-header h1 {
+    margin-bottom: 0.35rem;
+}
+
+.page-header .lead {
+    margin: 0 0 1rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    max-width: 36rem;
 }
 
 .indent {
@@ -100,4 +113,21 @@ a.navbar {
 
 #sqrt-widget:focus {
     outline: none;
+}
+
+.hub-links {
+    line-height: 1.6;
+    max-width: 40rem;
+    margin: 1em 0 0;
+    padding-left: 1.5rem;
+    list-style-position: outside;
+}
+
+.hub-links li {
+    margin: 0.5em 0;
+}
+
+.muted {
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 0.95rem;
 }

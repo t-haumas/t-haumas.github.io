@@ -1,0 +1,56 @@
+/* Shared layout + back control for pages under /musicwritings/ (no site sidebar). */
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #111;
+    background-color: #DDD;
+}
+
+.writings-back {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 100;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #222;
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    padding: 8px 14px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.writings-back:hover {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.writings-shell {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3.25rem 1.5rem 2.5rem;
+    line-height: 1.6;
+}
+
+.writings-shell h1 {
+    margin-top: 0;
+}
+
+.muted {
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 0.95rem;
+}
+
+.writing-list {
+    line-height: 1.6;
+    padding-left: 1.5rem;
+    margin: 1em 0;
+}
+
+.writing-list li {
+    margin: 0.5em 0;
+}
