@@ -1,0 +1,65 @@
+---
+description: Self-improvement loop — notice and raise opportunities to improve agent capabilities and workflow
+alwaysApply: true
+---
+
+# Agent Self-Improvement
+
+## When to raise an improvement suggestion
+
+Stay alert for friction in the workflow — anything where the agent was slow, wrong, or limited, or where the user had to intervene manually. This includes:
+
+- The user corrects the agent, and the same mistake would recur in a fresh session.
+- The agent and user work together to solve a problem, and afterward it's clear a rule/skill/tool could prevent it or expedite the solution next time.
+- The agent notices something proactively — a repeated manual step, an available tool that isn't configured, a workflow that could be automated — even if the user hasn't framed it as a problem.
+
+**The litmus test:** Could the agent (or a future session) handle this better if something were written down, installed, or configured? Would the workflow just now have been smoother for both the agent and user if this improvement had already been made? If yes, raise it.
+
+**What doesn't need an improvement:** Facts the agent can re-derive by reading the codebase (what a function does, domain logic, one-off code bugs).
+
+## Proactive mindset
+
+**Reflect after every work turn.** After each user message where you performed work (not just answered a question), pause and ask yourself: "Did anything go wrong or feel clunky in the conversation thus far? Did the user have to correct me, point me to something, or do something I should have done? Did we have to go back and forth a lot on an issue, or did the user have to do a lot of manual work?" If yes, raise a proposal immediately in that same response — do not defer it to a future turn.
+
+**Raise it when you see it, not later.** Do not wait for the user to ask about improvements. If you notice friction, include the proposal in the same response where you resolve the issue. Deferring means forgetting.
+
+**Never self-censor.** If you thought "I should probably mention this but it might be too noisy" — raise it. A false positive (user says "not worth it") is always cheaper than a missed opportunity. The user controls the feedback loop; your job is to surface candidates.
+
+## What an improvement can look like
+
+An improvement isn't always a new rule. It could be any of:
+
+- Editing an existing `.cursor/rules/*.mdc` file, `AGENTS.md`, or `.cursor/skills/*/SKILL.md` — including this file itself.
+- Creating a new rule or skill.
+- Suggesting a tool, MCP server, VS Code/Cursor extension, or terminal utility to install.
+- Proposing a shell alias, hook, or automation.
+
+## How to raise it
+
+Bring it up in conversation naturally. If a specific file change is warranted, include:
+
+```
+---
+**Improvement proposal:**
+- **What I noticed:** <the friction or missed opportunity, concretely>
+- **Why it matters:** <what went wrong, or what could be better>
+- **Suggested action:** <the specific change, install, or configuration>
+- **Target:** <e.g., `.cursor/rules/testing.mdc`, or "install X extension">
+- **Was this worth raising?** <ask the user — helps calibrate future proposals>
+```
+
+Then **wait for user approval** before making changes. Never silently rewrite rules or install tools.
+
+## Meta-improvement
+
+This self-improvement rule should improve over time. The "Was this worth raising?" question in the proposal template is one way to close the feedback loop:
+
+- **If the user says it wasn't useful** — discuss why. Was the proposal too noisy? Too obvious? Wrong scope? Use that to propose tightening this self-improvement rule.
+- **If the user says it was useful but the suggestion was off** — discuss what would have been better. Use that to refine what kinds of improvements to propose.
+- **If the user points out a missed opportunity** (something the agent should have raised but didn't) — discuss what signal the agent missed, and propose widening this rule's triggers.
+
+This feedback loop applies to this rule itself. Any adjustment to how, when, or what the agent proposes is a valid improvement to `.cursor/rules/self-improvement.mdc`.
+
+## Scope
+
+- Prefer small, targeted changes over broad rewrites.
